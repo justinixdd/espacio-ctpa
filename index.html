@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTP Aserrí - Desarrollo Web</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="text-center text-white d-flex flex-column justify-content-center align-items-center parallax" id="inicio">
+    <img data-attachment-id="1445" data-permalink="https://ctpdeaserridiurno.com/mantenimiento/escudo-sin-fondo_mesa-de-trabajo-1/" data-orig-file="https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png" data-orig-size="1366,768" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="escudo-sin-fondo_mesa-de-trabajo-1" data-image-description="" data-image-caption="" data-medium-file="https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=300" data-large-file="https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=900" width="750" height="421" src="https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=750" alt="" class="wp-image-1445" style="width:532px;height:auto" srcset="https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=750 750w, https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=150 150w, https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=300 300w, https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=768 768w, https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png?w=1024 1024w, https://ctpdeaserridiurno.com/wp-content/uploads/2023/06/escudo-sin-fondo_mesa-de-trabajo-1.png 1366w" class="logo mb-3" sizes="(max-width: 750px) 100vw, 750px">
+    <h1 class="glow">🚀 Explora el universo del Desarrollo Web</h1>
+    <p>La nave se dirige hacia JavaScript... ¡Embárcate en la aventura!</p>
+    <nav class="mt-3">
+      <a href="#feria" class="btn btn-neon">Feria 2026</a>
+      <a href="#subareas" class="btn btn-neon">Planetas</a>
+      <a href="#juegos" class="btn btn-neon">Zona Gamer</a>
+      <a href="#proyectos" class="btn btn-neon">Proyectos</a>
+      <a href="#qr-section" class="btn btn-neon">QR</a>
+    </nav>
+  </header>
+
+  <!-- Sección Feria -->
+  <section class="container text-center py-5" id="feria" data-aos="fade-up">
+    <h2 class="titulo">🌠 Feria de Especialidades 2026</h2>
+    <p class="lead">🌌 Conquista tu futuro en la Feria de Especialidades Técnicas 2026<br>
+    ¡El viaje hacia el Desarrollo Web comienza aquí!</p>
+  </section>
+
+  <!-- Subáreas -->
+  <section class="container py-5" id="subareas" data-aos="fade-right">
+    <h2 class="titulo text-center mb-4">🚀 Planetas de Conocimiento</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card neon-card text-center" onclick="openModal('disenoSoftwareModal')">
+          <h3>🌐 Diseño de Software (10°)</h3>
+          <button class="btn btn-neon mt-3">Ver Más</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card neon-card text-center" onclick="openModal('desarrolloFrontendModal')">
+          <h3>💻 Desarrollo Frontend (11°)</h3>
+          <button class="btn btn-neon mt-3">Ver Más</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card neon-card text-center" onclick="openModal('desarrolloBackendModal')">
+          <h3>⚙️ Desarrollo Backend (12°)</h3>
+          <button class="btn btn-neon mt-3">Ver Más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales de Planetas de Conocimiento -->
+  <div id="disenoSoftwareModal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="closeModal('disenoSoftwareModal')">&times;</span>
+      <h2>🌐 Diseño de Software (10°)</h2>
+      <p>En este planeta, aprenderás los fundamentos del diseño de software, incluyendo diagramas UML, patrones de diseño y arquitectura de sistemas. Es la base para construir aplicaciones robustas y escalables.</p>
+      <ul>
+        <li>Introducción a la programación</li>
+        <li>Lógica de programación</li>
+        <li>Diseño de bases de datos</li>
+        <li>Principios SOLID</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="desarrolloFrontendModal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="closeModal('desarrolloFrontendModal')">&times;</span>
+      <h2>💻 Desarrollo Frontend (11°)</h2>
+      <p>Explora el arte de crear interfaces de usuario interactivas y atractivas. Dominarás HTML, CSS y JavaScript, y te sumergirás en frameworks modernos como React o Vue.js.</p>
+      <ul>
+        <li>HTML5 y CSS3 avanzado</li>
+        <li>JavaScript moderno (ES6+)</li>
+        <li>Frameworks y librerías (React, Vue, Angular)</li>
+        <li>Diseño responsivo y UX/UI</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="desarrolloBackendModal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="closeModal('desarrolloBackendModal')">&times;</span>
+      <h2>⚙️ Desarrollo Backend (12°)</h2>
+      <p>Adéntrate en el lado del servidor, donde la lógica de negocio y la gestión de datos cobran vida. Aprenderás sobre bases de datos, APIs RESTful y lenguajes como Node.js, Python o PHP.</p>
+      <ul>
+        <li>Gestión de bases de datos (SQL, NoSQL)</li>
+        <li>Desarrollo de APIs RESTful</li>
+        <li>Lenguajes de servidor (Node.js, Python, PHP)</li>
+        <li>Seguridad web y autenticación</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Juegos -->
+  <section class="container py-5" id="juegos" data-aos="zoom-in">
+    <h2 class="titulo text-center mb-4">🎮 Zona Gamer: Aprende Jugando</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card neon-card p-3">
+          <h4>Quiz Espacial</h4>
+          <p>Responde preguntas de HTML, CSS y JS.</p>
+          <button class="btn btn-neon mt-3" onclick="showGame('quizGame')">Jugar</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card neon-card p-3">
+          <h4>Atrapa la Estrella</h4>
+          <p>Juego simple con JavaScript para atrapar elementos.</p>
+          <button class="btn btn-neon mt-3" onclick="showGame('estrellaGameContainer')">Jugar</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card neon-card p-3">
+          <h4>Rompecódigos</h4>
+          <p>Arrastra y suelta para armar líneas de código correctas.</p>
+          <button class="btn btn-neon mt-3" onclick="showGame('rompecodigosGame')">Jugar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenedores de juegos -->
+    <div id="quizGame" class="game-container" style="display:none;">
+      <h3 class="titulo mt-4">Quiz Espacial</h3>
+      <div id="quiz" class="neon-card p-4"></div>
+      <button id="quizSubmit" class="btn btn-neon mt-3">Ver Resultado</button>
+      <p id="quizResult" class="mt-2 glow"></p>
+      <button class="btn btn-neon mt-3" onclick="hideGame('quizGame')">Cerrar Juego</button>
+    </div>
+
+    <div id="estrellaGameContainer" class="game-container" style="display:none;">
+      <h3 class="titulo mt-4">Atrapa la Estrella</h3>
+      <canvas id="estrellaGame" width="400" height="300" class="neon-card"></canvas>
+      <p id="estrellaScore" class="mt-2 glow"></p>
+      <button class="btn btn-neon mt-3" onclick="hideGame('estrellaGameContainer')">Cerrar Juego</button>
+    </div>
+
+    <div id="rompecodigosGame" class="game-container" style="display:none;">
+      <h3 class="titulo mt-4">Rompecódigos</h3>
+      <div class="neon-card p-4">
+        <p>Arrastra las piezas al área de destino para formar el código `&lt;p&gt;Hola mundo&lt;/p&gt;`:</p>
+        <div id="pieces" class="mb-3"></div>
+        <div id="target" class="mb-3"></div>
+        <p id="rompeResult" class="mt-2 glow"></p>
+      </div>
+      <button class="btn btn-neon mt-3" onclick="hideGame('rompecodigosGame')">Cerrar Juego</button>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="container py-5" id="proyectos" data-aos="fade-up">
+    <h2 class="titulo text-center mb-4">🌌 Proyectos Destacados</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="assets/proyecto1.png" class="card-img-top" alt="Medio Ambiente">
+          <div class="card-body text-center">
+            <h5>🌍 Página CTP Aserrí</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="assets/proyecto2.png" class="card-img-top" alt="Mini tienda">
+          <div class="card-body text-center">
+            <h5>🛒 Taller Sentra</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="assets/proyecto3.png" class="card-img-top" alt="Plataforma de apuntes">
+          <div class="card-body text-center">
+            <h5>📚 Gestor de Tareas</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nueva Sección para QR -->
+  <section class="container text-center py-5" id="qr-section" data-aos="fade-up">
+    <h2 class="titulo">🔗 Escanea Nuestro Código QR</h2>
+    <p class="lead">¡Conéctate con nosotros al instante!</p>
+    <div class="qr-container neon-card p-4 mx-auto">
+      <img src="assets/qr.png" alt="Código QR de ejemplo" class="img-fluid qr-image">
+      <p class="mt-3">Escanea este código para acceder a más recursos y novedades.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-4 parallax">
+    <p class="glow">✨ Tu futuro brilla más que una galaxia — Únete al Desarrollo Web.</p>
+    <p>Síguenos en redes | Contacto: info@ctpaseri.com</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/parallax-js@3.1.0/dist/parallax.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
+
+<div class="planet earth"></div>
+<div class="planet mars"></div>
+
+</html>
